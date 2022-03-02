@@ -55,39 +55,39 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.gb_PERMISSION = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cbb_DEMOTE = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbb_LICENCE = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cbb_VOTE = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cbb_ACCESS = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cbb_LICENCE = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.cbb_DEMOTE = new System.Windows.Forms.ComboBox();
             this.gb_TYPE = new System.Windows.Forms.GroupBox();
-            this.cb_MAYOR = new System.Windows.Forms.CheckBox();
-            this.cb_CHIEF = new System.Windows.Forms.CheckBox();
-            this.cb_MEDIC = new System.Windows.Forms.CheckBox();
-            this.cb_COOK = new System.Windows.Forms.CheckBox();
             this.cb_HOBO = new System.Windows.Forms.CheckBox();
+            this.cb_COOK = new System.Windows.Forms.CheckBox();
+            this.cb_MEDIC = new System.Windows.Forms.CheckBox();
+            this.cb_CHIEF = new System.Windows.Forms.CheckBox();
+            this.cb_MAYOR = new System.Windows.Forms.CheckBox();
             this.gb_SPAWN = new System.Windows.Forms.GroupBox();
             this.nud_ARMOR = new System.Windows.Forms.NumericUpDown();
             this.nud_HEALTH = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.gb_OTHER = new System.Windows.Forms.GroupBox();
+            this.cbb_DEMOTEDEATH = new System.Windows.Forms.ComboBox();
+            this.tb_MESSAGEDEMOTE = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.tb_MESSAGEDEMOTE = new System.Windows.Forms.TextBox();
-            this.cbb_DEMOTEDEATH = new System.Windows.Forms.ComboBox();
             this.gb_ENABLE = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox1 = new System.Windows.Forms.RichTextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.gb_BASE.SuspendLayout();
             this.gb_JOB.SuspendLayout();
             this.gb_ECONOMY.SuspendLayout();
@@ -376,6 +376,48 @@
             this.gb_PERMISSION.TabStop = false;
             this.gb_PERMISSION.Text = "Permission Configuration";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 54);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(173, 13);
+            this.label15.TabIndex = 22;
+            this.label15.Text = "Les autres joueurs peuvent demote";
+            // 
+            // cbb_DEMOTE
+            // 
+            this.cbb_DEMOTE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_DEMOTE.FormattingEnabled = true;
+            this.cbb_DEMOTE.Items.AddRange(new object[] {
+            "true.Oui",
+            "false.Non"});
+            this.cbb_DEMOTE.Location = new System.Drawing.Point(9, 70);
+            this.cbb_DEMOTE.Name = "cbb_DEMOTE";
+            this.cbb_DEMOTE.Size = new System.Drawing.Size(235, 21);
+            this.cbb_DEMOTE.TabIndex = 16;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(488, 13);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(183, 13);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Licence d\'arme incluse dans le travail";
+            // 
+            // cbb_LICENCE
+            // 
+            this.cbb_LICENCE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_LICENCE.FormattingEnabled = true;
+            this.cbb_LICENCE.Items.AddRange(new object[] {
+            "true.Oui",
+            "false.Non"});
+            this.cbb_LICENCE.Location = new System.Drawing.Point(491, 29);
+            this.cbb_LICENCE.Name = "cbb_LICENCE";
+            this.cbb_LICENCE.Size = new System.Drawing.Size(235, 21);
+            this.cbb_LICENCE.TabIndex = 15;
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -419,48 +461,6 @@
             this.cbb_ACCESS.Size = new System.Drawing.Size(235, 21);
             this.cbb_ACCESS.TabIndex = 13;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(488, 13);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(183, 13);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Licence d\'arme incluse dans le travail";
-            // 
-            // cbb_LICENCE
-            // 
-            this.cbb_LICENCE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_LICENCE.FormattingEnabled = true;
-            this.cbb_LICENCE.Items.AddRange(new object[] {
-            "true.Oui",
-            "false.Non"});
-            this.cbb_LICENCE.Location = new System.Drawing.Point(491, 29);
-            this.cbb_LICENCE.Name = "cbb_LICENCE";
-            this.cbb_LICENCE.Size = new System.Drawing.Size(235, 21);
-            this.cbb_LICENCE.TabIndex = 15;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 54);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(173, 13);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "Les autres joueurs peuvent demote";
-            // 
-            // cbb_DEMOTE
-            // 
-            this.cbb_DEMOTE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_DEMOTE.FormattingEnabled = true;
-            this.cbb_DEMOTE.Items.AddRange(new object[] {
-            "true.Oui",
-            "false.Non"});
-            this.cbb_DEMOTE.Location = new System.Drawing.Point(9, 70);
-            this.cbb_DEMOTE.Name = "cbb_DEMOTE";
-            this.cbb_DEMOTE.Size = new System.Drawing.Size(235, 21);
-            this.cbb_DEMOTE.TabIndex = 16;
-            // 
             // gb_TYPE
             // 
             this.gb_TYPE.Controls.Add(this.cb_HOBO);
@@ -475,35 +475,15 @@
             this.gb_TYPE.TabStop = false;
             this.gb_TYPE.Text = "Type Configuration";
             // 
-            // cb_MAYOR
+            // cb_HOBO
             // 
-            this.cb_MAYOR.AutoSize = true;
-            this.cb_MAYOR.Location = new System.Drawing.Point(6, 19);
-            this.cb_MAYOR.Name = "cb_MAYOR";
-            this.cb_MAYOR.Size = new System.Drawing.Size(194, 17);
-            this.cb_MAYOR.TabIndex = 17;
-            this.cb_MAYOR.Text = "Maire (lockdown, lottery, broadcast)";
-            this.cb_MAYOR.UseVisualStyleBackColor = true;
-            // 
-            // cb_CHIEF
-            // 
-            this.cb_CHIEF.AutoSize = true;
-            this.cb_CHIEF.Location = new System.Drawing.Point(250, 19);
-            this.cb_CHIEF.Name = "cb_CHIEF";
-            this.cb_CHIEF.Size = new System.Drawing.Size(132, 17);
-            this.cb_CHIEF.TabIndex = 18;
-            this.cb_CHIEF.Text = "Chief (set jail positions)";
-            this.cb_CHIEF.UseVisualStyleBackColor = true;
-            // 
-            // cb_MEDIC
-            // 
-            this.cb_MEDIC.AutoSize = true;
-            this.cb_MEDIC.Location = new System.Drawing.Point(470, 19);
-            this.cb_MEDIC.Name = "cb_MEDIC";
-            this.cb_MEDIC.Size = new System.Drawing.Size(201, 17);
-            this.cb_MEDIC.TabIndex = 19;
-            this.cb_MEDIC.Text = "Medic (External addons may use this)";
-            this.cb_MEDIC.UseVisualStyleBackColor = true;
+            this.cb_HOBO.AutoSize = true;
+            this.cb_HOBO.Location = new System.Drawing.Point(250, 42);
+            this.cb_HOBO.Name = "cb_HOBO";
+            this.cb_HOBO.Size = new System.Drawing.Size(198, 17);
+            this.cb_HOBO.TabIndex = 21;
+            this.cb_HOBO.Text = "Hobo (External addons may use this)";
+            this.cb_HOBO.UseVisualStyleBackColor = true;
             // 
             // cb_COOK
             // 
@@ -515,15 +495,35 @@
             this.cb_COOK.Text = "Cook (food, microwave)";
             this.cb_COOK.UseVisualStyleBackColor = true;
             // 
-            // cb_HOBO
+            // cb_MEDIC
             // 
-            this.cb_HOBO.AutoSize = true;
-            this.cb_HOBO.Location = new System.Drawing.Point(250, 42);
-            this.cb_HOBO.Name = "cb_HOBO";
-            this.cb_HOBO.Size = new System.Drawing.Size(198, 17);
-            this.cb_HOBO.TabIndex = 21;
-            this.cb_HOBO.Text = "Hobo (External addons may use this)";
-            this.cb_HOBO.UseVisualStyleBackColor = true;
+            this.cb_MEDIC.AutoSize = true;
+            this.cb_MEDIC.Location = new System.Drawing.Point(470, 19);
+            this.cb_MEDIC.Name = "cb_MEDIC";
+            this.cb_MEDIC.Size = new System.Drawing.Size(201, 17);
+            this.cb_MEDIC.TabIndex = 19;
+            this.cb_MEDIC.Text = "Medic (External addons may use this)";
+            this.cb_MEDIC.UseVisualStyleBackColor = true;
+            // 
+            // cb_CHIEF
+            // 
+            this.cb_CHIEF.AutoSize = true;
+            this.cb_CHIEF.Location = new System.Drawing.Point(250, 19);
+            this.cb_CHIEF.Name = "cb_CHIEF";
+            this.cb_CHIEF.Size = new System.Drawing.Size(132, 17);
+            this.cb_CHIEF.TabIndex = 18;
+            this.cb_CHIEF.Text = "Chief (set jail positions)";
+            this.cb_CHIEF.UseVisualStyleBackColor = true;
+            // 
+            // cb_MAYOR
+            // 
+            this.cb_MAYOR.AutoSize = true;
+            this.cb_MAYOR.Location = new System.Drawing.Point(6, 19);
+            this.cb_MAYOR.Name = "cb_MAYOR";
+            this.cb_MAYOR.Size = new System.Drawing.Size(194, 17);
+            this.cb_MAYOR.TabIndex = 17;
+            this.cb_MAYOR.Text = "Maire (lockdown, lottery, broadcast)";
+            this.cb_MAYOR.UseVisualStyleBackColor = true;
             // 
             // gb_SPAWN
             // 
@@ -558,6 +558,11 @@
             // nud_HEALTH
             // 
             this.nud_HEALTH.Location = new System.Drawing.Point(9, 32);
+            this.nud_HEALTH.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.nud_HEALTH.Name = "nud_HEALTH";
             this.nud_HEALTH.Size = new System.Drawing.Size(235, 20);
             this.nud_HEALTH.TabIndex = 22;
@@ -598,6 +603,26 @@
             this.gb_OTHER.TabStop = false;
             this.gb_OTHER.Text = "Other Configuration";
             // 
+            // cbb_DEMOTEDEATH
+            // 
+            this.cbb_DEMOTEDEATH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_DEMOTEDEATH.FormattingEnabled = true;
+            this.cbb_DEMOTEDEATH.Items.AddRange(new object[] {
+            "true.Oui",
+            "false.Non"});
+            this.cbb_DEMOTEDEATH.Location = new System.Drawing.Point(9, 30);
+            this.cbb_DEMOTEDEATH.Name = "cbb_DEMOTEDEATH";
+            this.cbb_DEMOTEDEATH.Size = new System.Drawing.Size(235, 21);
+            this.cbb_DEMOTEDEATH.TabIndex = 24;
+            // 
+            // tb_MESSAGEDEMOTE
+            // 
+            this.tb_MESSAGEDEMOTE.Location = new System.Drawing.Point(250, 31);
+            this.tb_MESSAGEDEMOTE.Name = "tb_MESSAGEDEMOTE";
+            this.tb_MESSAGEDEMOTE.Size = new System.Drawing.Size(235, 20);
+            this.tb_MESSAGEDEMOTE.TabIndex = 25;
+            this.tb_MESSAGEDEMOTE.Text = "The mayor died and was therefore demoted.";
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -616,26 +641,6 @@
             this.label19.TabIndex = 11;
             this.label19.Text = "Demote quand le joueur meurt";
             // 
-            // tb_MESSAGEDEMOTE
-            // 
-            this.tb_MESSAGEDEMOTE.Location = new System.Drawing.Point(250, 31);
-            this.tb_MESSAGEDEMOTE.Name = "tb_MESSAGEDEMOTE";
-            this.tb_MESSAGEDEMOTE.Size = new System.Drawing.Size(235, 20);
-            this.tb_MESSAGEDEMOTE.TabIndex = 25;
-            this.tb_MESSAGEDEMOTE.Text = "The mayor died and was therefore demoted.";
-            // 
-            // cbb_DEMOTEDEATH
-            // 
-            this.cbb_DEMOTEDEATH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_DEMOTEDEATH.FormattingEnabled = true;
-            this.cbb_DEMOTEDEATH.Items.AddRange(new object[] {
-            "true.Oui",
-            "false.Non"});
-            this.cbb_DEMOTEDEATH.Location = new System.Drawing.Point(9, 30);
-            this.cbb_DEMOTEDEATH.Name = "cbb_DEMOTEDEATH";
-            this.cbb_DEMOTEDEATH.Size = new System.Drawing.Size(235, 21);
-            this.cbb_DEMOTEDEATH.TabIndex = 24;
-            // 
             // gb_ENABLE
             // 
             this.gb_ENABLE.Controls.Add(this.checkBox4);
@@ -649,27 +654,16 @@
             this.gb_ENABLE.TabStop = false;
             this.gb_ENABLE.Text = "Activer des options ?";
             // 
-            // checkBox1
+            // checkBox4
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 34);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(150, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Activer le GB Permission ?";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 77);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(128, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Activer le GB TYPE ?";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(364, 77);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(146, 17);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Activer le GB DEMOTE ?";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -682,16 +676,27 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // checkBox4
+            // checkBox2
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(364, 77);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(146, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Activer le GB DEMOTE ?";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 77);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(128, 17);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Activer le GB TYPE ?";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 34);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(150, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Activer le GB Permission ?";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -705,15 +710,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Transformer en LUA";
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(498, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Activer la function";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.textBox1.Location = new System.Drawing.Point(6, 54);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(498, 398);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "";
             // 
             // linkLabel1
             // 
@@ -726,13 +729,15 @@
             this.linkLabel1.Text = "Copy Text";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // textBox1
+            // button1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(498, 398);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "";
+            this.button1.Location = new System.Drawing.Point(6, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(498, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Activer la function";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // jobcreation
             // 
