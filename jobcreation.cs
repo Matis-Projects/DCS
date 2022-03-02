@@ -159,7 +159,7 @@ It just works");
              */
             // TEAM_ID
             if (not(tb_TEAMID.Text == "") && g) {
-                basetxt += tb_TEAMID + " = DarkRP.CreateJob\"";
+                basetxt += tb_TEAMID.Text + " = DarkRP.CreateJob\"";
             }
             else
             {
@@ -169,7 +169,7 @@ It just works");
             // NAME
             if (not(tb_NAME.Text == "") && g)
             {
-                basetxt += tb_NAME + "\", {";
+                basetxt += tb_NAME.Text + "\", {";
             }
             else
             {
