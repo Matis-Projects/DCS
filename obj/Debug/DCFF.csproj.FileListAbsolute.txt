@@ -1,0 +1,14 @@
+C:\Users\Matis\source\repos\DCFF\bin\Debug\DCFF.exe.config
+C:\Users\Matis\source\repos\DCFF\bin\Debug\DCFF.exe
+C:\Users\Matis\source\repos\DCFF\bin\Debug\DCFF.pdb
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.csproj.AssemblyReference.cache
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.csproj.SuggestedBindingRedirects.cache
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.Form1.resources
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.Properties.Resources.resources
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.csproj.GenerateResource.cache
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.csproj.CoreCompileInputs.cache
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.exe
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.pdb
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.AboutBox.resources
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.Form1i.resources
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.jobcreation.resources
