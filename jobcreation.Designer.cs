@@ -226,12 +226,13 @@
             // 
             // btn_CLR
             // 
+            this.btn_CLR.BackColor = System.Drawing.Color.Black;
             this.btn_CLR.Location = new System.Drawing.Point(9, 32);
             this.btn_CLR.Name = "btn_CLR";
             this.btn_CLR.Size = new System.Drawing.Size(235, 20);
             this.btn_CLR.TabIndex = 5;
             this.btn_CLR.Text = "Changer la couleur";
-            this.btn_CLR.UseVisualStyleBackColor = true;
+            this.btn_CLR.UseVisualStyleBackColor = false;
             this.btn_CLR.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5

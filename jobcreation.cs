@@ -159,7 +159,7 @@ It just works");
              */
             // TEAM_ID
             if (not(tb_TEAMID.Text == "") && g) {
-                basetxt += tb_TEAMID.Text + " = DarkRP.CreateJob\"";
+                basetxt += tb_TEAMID.Text + " = DarkRP.createJob(\"";
             }
             else
             {
@@ -196,7 +196,7 @@ It just works");
              * JOB
              */
             // COLOR
-            basetxt += "\n\tcolor = (" + btn_CLR.BackColor.R + "," + btn_CLR.BackColor.G + "," + btn_CLR.BackColor.B + "),";
+            basetxt += "\n\tcolor = Color(" + btn_CLR.BackColor.R + "," + btn_CLR.BackColor.G + "," + btn_CLR.BackColor.B + "),";
             // DESCRIPTIONS
             if (not(tb_DESCRIPTION.Text == "") && g)
             {
@@ -237,9 +237,9 @@ It just works");
             * ECONOMY
             */
             // SALARY
-            basetxt += "\n\tsalary = \"" + nud_SALARY.Value + "\",";
+            basetxt += "\n\tsalary = " + nud_SALARY.Value + ",";
             // Max
-            basetxt += "\n\tsalary = \"" + nud_MAX.Value + "\",";
+            basetxt += "\n\tmax = " + nud_MAX.Value + ",";
 
             /*
             * Permission
