@@ -12,3 +12,4 @@ C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.pdb
 C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.AboutBox.resources
 C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.Form1i.resources
 C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.jobcreation.resources
+C:\Users\Matis\source\repos\DCFF\obj\Debug\DCFF.MDIParent1.resources

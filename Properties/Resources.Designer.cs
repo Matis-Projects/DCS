@@ -63,9 +63,18 @@ namespace DCFF.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream extreme_edition {
+        internal static System.IO.UnmanagedMemoryStream bethesda {
             get {
-                return ResourceManager.GetStream("extreme_edition", resourceCulture);
+                return ResourceManager.GetStream("bethesda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream copied_text {
+            get {
+                return ResourceManager.GetStream("copied_text", resourceCulture);
             }
         }
         
@@ -76,6 +85,24 @@ namespace DCFF.Properties {
             get {
                 object obj = ResourceManager.GetObject("icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream start_func {
+            get {
+                return ResourceManager.GetStream("start_func", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ui_click {
+            get {
+                return ResourceManager.GetStream("ui_click", resourceCulture);
             }
         }
     }

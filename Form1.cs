@@ -13,6 +13,7 @@ namespace DCFF
 {
     public partial class Form1 : Form
     {
+        //Form app = null;
         public Form1()
         {
             InitializeComponent();
@@ -26,8 +27,10 @@ namespace DCFF
 
         private void button1_Click(object sender, EventArgs e)
         {
-            jobcreation jc = new jobcreation();
-            jc.ShowDialog();
+            
+            //tabcontrol
+            //jc.Size = jc.Parent.Size;
+            //app = jc;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,5 +51,42 @@ namespace DCFF
                 //Application.Exit();
             }*/
         }
+
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (e.Node.Text.StartsWith("Job Creator"))
+            {
+                TabPage tabPage = new TabPage("Job Creation ID:" + (tabControl1.TabCount + 1));
+
+                jobcreation jc = new jobcreation();
+                jc.MdiParent = this;
+                jc.Parent = tabPage;
+                jc.FormBorderStyle = FormBorderStyle.None;
+                jc.Dock = DockStyle.Fill;
+                jc.Show();
+                tabControl1.TabPages.Add(tabPage);
+            }else if (e.Node.Text.StartsWith("Category Creator"))
+            {
+                /*TabPage tabPage = new TabPage("Category Creation ID:" + (tabControl1.TabCount + 1));
+
+                jobcreation jc = new jobcreation();
+                jc.MdiParent = this;
+                jc.Parent = tabPage;
+                jc.FormBorderStyle = FormBorderStyle.None;
+                jc.Dock = DockStyle.Fill;
+                jc.Show();
+                tabControl1.TabPages.Add(tabPage);*/
+                MessageBox.Show("Disponible à la prochaine mise à jour!");
+            }
+        }
+
+        /*private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            if (app != null)
+            {
+                app.Size = app.Parent.Size;
+            }
+            
+        }*/
     }
 }

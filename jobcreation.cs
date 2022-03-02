@@ -14,6 +14,8 @@ namespace DCFF
     public partial class jobcreation : Form
     {
         int owmyass = 0;
+        SoundPlayer snd;
+        bool good_for_sound = false;
         public jobcreation()
         {
             InitializeComponent();
@@ -99,21 +101,32 @@ It just works
 It just works");*/
             if (textBox1.Text.Length > 0)
             {
-                Clipboard.SetText(textBox1.Text);
+                try
+                {
+                    Clipboard.SetText(textBox1.Text);
+                }catch (Exception ex)
+                {
+                    MessageBox.Show("Une erreur interne nous empêches d'utiliser le presse papier.");
+                }
+                
                 owmyass = 0;
+                if (good_for_sound)
+                {
+                    snd = new SoundPlayer(Properties.Resources.copied_text);
+                    snd.Play();
+                }
             }
             else
             {
                 owmyass += 1;
-                if(owmyass == 1)
-                {
-                    MessageBox.Show("SMG4");
-                }
                 
                 if (owmyass == 39)
                 {
-                    SoundPlayer snd = new SoundPlayer(Properties.Resources.extreme_edition);
-                    snd.Play();
+                    if (good_for_sound)
+                    {
+                        snd = new SoundPlayer(Properties.Resources.bethesda);
+                        snd.Play();
+                    }
                     MessageBox.Show(@"It just works, it just works
 Little lies, stunning shows
 People buy, money flows, it just works
@@ -135,6 +148,14 @@ It just works
 It just works
 It just works");
                 }
+                else
+                {
+                    if (good_for_sound)
+                    {
+                        snd = new SoundPlayer(Properties.Resources.ui_click);
+                        snd.Play();
+                    }
+                }
                 
             }
             
@@ -142,6 +163,11 @@ It just works");
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            if (good_for_sound)
+            {
+                snd = new SoundPlayer(Properties.Resources.start_func);
+                snd.Play();
+            }
             string tl = transform_lua();
             if (not(tl == "none"))
             {
@@ -159,6 +185,7 @@ It just works");
              */
             // TEAM_ID
             if (not(tb_TEAMID.Text == "") && g) {
+                tb_TEAMID.Text = tb_TEAMID.Text.Replace(" ", "_");
                 basetxt += tb_TEAMID.Text + " = DarkRP.createJob(\"";
             }
             else
@@ -210,6 +237,7 @@ It just works");
             // COMMAND
             if (not(tb_COMMAND.Text == "") && g)
             {
+                tb_COMMAND.Text = tb_COMMAND.Text.Replace(" ", "_");
                 basetxt += "\n\tcommand = \"" + tb_COMMAND.Text + "\",";
             }
             else
@@ -221,7 +249,7 @@ It just works");
             if (not(tb_WEAPON.Text == "") && g)
             {
                 if (tb_WEAPON.Text.EndsWith(";")) { tb_WEAPON.Text = tb_WEAPON.Text.Substring(0, tb_WEAPON.Text.Length - 1); }
-                basetxt += "\n\tweapons = {\"" + tb_WEAPON.Text.Replace(";", "\",\"") + "\"},";
+                basetxt += "\n\tweapons = {\"" + tb_WEAPON.Text.Replace(";", "\",\"").Replace(" ", "\",\"") + "\"},";
             }
             else
             {
@@ -327,8 +355,8 @@ It just works");
                 // Armor
                 if (nud_ARMOR.Value > 0)
                 {
-                    t += "\n\t\tply:SetArmor(" + nud_HEALTH.Value + ")";
-                    t += "\n\t\tply:SetMaxArmor(" + nud_HEALTH.Value + ")";
+                    t += "\n\t\tply:SetArmor(" + nud_ARMOR.Value + ")";
+                    t += "\n\t\tply:SetMaxArmor(" + nud_ARMOR.Value + ")";
                 }
                 t += "\n\tend,";
                 basetxt += t;
@@ -377,6 +405,11 @@ It just works");
             }
 
             return basetxt;
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            good_for_sound = not(good_for_sound);
         }
     }
 }
