@@ -32,7 +32,7 @@ namespace DCFF
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            WebClient wc = new WebClient();
+            /*WebClient wc = new WebClient();
             try
             {
                 string t = wc.DownloadString("https://api.matis-dev.cf/k.ok");
@@ -46,7 +46,7 @@ namespace DCFF
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 //Application.Exit();
-            }
+            }*/
         }
     }
 }
